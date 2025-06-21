@@ -6,7 +6,7 @@
   - [Fiancial Aid Analysis](https://docs.google.com/document/d/1DBMXOkPKNJid11gyOH1VwSN7B71BFDtL/edit)
  
 - <b>Simple Weather App</b>
-  - [Weather App](https://docs.google.com/document/d/1DBMXOkPKNJid11gyOH1VwSN7B71BFDtL/edit)
+  - [Weather App](https://github.com/FelixYu120/simple-weather-app)
 
 <h2> 🤳 Connect with me:</h2>
 
