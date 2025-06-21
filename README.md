@@ -4,6 +4,9 @@
 
 - <b>Student Fianancial Aid Analysis Using Machine Learning</b>
   - [Fiancial Aid Analysis](https://docs.google.com/document/d/1DBMXOkPKNJid11gyOH1VwSN7B71BFDtL/edit)
+ 
+- <b>Simple Weather App</b>
+  - [Weather App](https://docs.google.com/document/d/1DBMXOkPKNJid11gyOH1VwSN7B71BFDtL/edit)
 
 <h2> 🤳 Connect with me:</h2>
 
