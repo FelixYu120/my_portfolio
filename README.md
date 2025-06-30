@@ -6,7 +6,10 @@
   - [Fiancial Aid Analysis](https://docs.google.com/document/d/1DBMXOkPKNJid11gyOH1VwSN7B71BFDtL/edit)
  
 - <b>Simple Weather App</b>
-  - [Weather App](https://github.com/FelixYu120/simple-weather-app)
+  - [Simple Weather App](https://github.com/FelixYu120/simple-weather-app)
+ 
+- <b>Mid Level Weather App</b>
+  - [Mid Weather App](https://github.com/FelixYu120/simple-weather-app)
 
 <h2> 🤳 Connect with me:</h2>
 
