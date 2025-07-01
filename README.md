@@ -9,7 +9,7 @@
   - [Simple Weather App](https://github.com/FelixYu120/simple-weather-app)
  
 - <b>Mid Level Weather App</b>
-  - [Mid Weather App](https://github.com/FelixYu120/simple-weather-app)
+  - [Mid Weather App](https://github.com/FelixYu120/mid-level-weather-app)
 
 <h2> 🤳 Connect with me:</h2>
 
