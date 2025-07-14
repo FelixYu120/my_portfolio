@@ -10,6 +10,9 @@
  
 - <b>Mid Level Weather App</b>
   - [Mid Weather App](https://github.com/FelixYu120/mid-level-weather-app)
+ 
+- <b>Apple Weather App</b>
+  - [Apple Weather App](https://github.com/FelixYu120/appleweather)
 
 <h2> 🤳 Connect with me:</h2>
 
