@@ -15,7 +15,7 @@
   - [Apple Weather App](https://github.com/FelixYu120/appleweather)
  
 - <b>Efficiency Tracker Web App</b>
-  - [My Tracker](https://github.com/FelixYu120/my-tracker)
+  - [My Tracker](https://github.com/FelixYu120/efficiency-tracker-app)
 
 <h2> 🤳 Connect with me:</h2>
 
