@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felix Yu: Resume</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -10,34 +11,65 @@
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
         <a href="../contact/index.html">Contact</a>
-        <a href="index.html">Resume</a>
+        <a href="index.html" class="current">Resume</a>
+        <a href="https://github.com/FelixYu120" target="_blank">GitHub</a>
     </nav>
 
-    <header>
+    <header class="resume-header">
         <h1>Felix Yu</h1>
-        <p>Data Science Student at UCSD</p>
+        <p>Data Science Major | UC San Diego</p>
     </header>
 
     <section id="education">
         <h2>Education</h2>
         <article>
-            <h3>UC San Diego</h3>
-            <p>B.S. in Data Science</p>
-            <p>Expected Graduation: <time datetime="2027-06">June 2027</time></p>
+            <header>
+                <h3>University of California, San Diego</h3>
+                <p class="date"><time datetime="2023-09">Sept 2023</time> – <time datetime="2027-06">June 2027</time></p>
+            </header>
+            <p><strong>Bachelor of Science in Data Science</strong></p>
         </article>
     </section>
 
     <section id="experience">
-        <h2>Work Experience</h2>
+        <h2>Experience</h2>
+        <article>
+            <header>
+                <h3>Software Engineer Intern</h3>
+                <p>RTX (Raytheon Technologies)</p>
+                <p class="date"><time datetime="2026-06">June 2026</time> – Present</p>
+            </header>
+            <ul>
+                <li>Developing hardware-software integration for motorcycle display systems.</li>
+                <li>Optimizing screen mirroring protocols for low-latency performance.</li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h3>Data Science Researcher</h3>
+                <p>Personal Project: Spotify vs. Politics</p>
+                <p class="date"><time datetime="2025-10">Oct 2025</time> – <time datetime="2025-12">Dec 2025</time></p>
+            </header>
+            <ul>
+                <li>Cleaned and analyzed massive datasets from Spotify API and presidential polling.</li>
+                <li>Used Python to identify correlations between musical sentiment and approval ratings.</li>
+            </ul>
+        </article>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Java, C++, HTML/CSS</li>
-            <li>Data Analysis, Machine Learning</li>
-            <li>Golf </li>
-        </ul>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <article>
+                <h3>Languages</h3>
+                <p>Python, Java, C++, HTML/CSS, SQL</p>
+            </article>
+            <article>
+                <h3>Tools & Tech</h3>
+                <p>Git, VS Code, Machine Learning, Data Visualization (D3.js)</p>
+            </article>
+        </div>
     </section>
 </body>
 </html>
