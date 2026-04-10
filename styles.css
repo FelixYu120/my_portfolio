@@ -1,6 +1,16 @@
+/* Step 1: Base styling and centering */
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
-  font: 100%/1.5 system-ui;
+    font: 100%/1.5 system-ui; /* Set font and line-height */
+    max-width: 100ch;         /* Prevent content from getting too wide */
+    margin-inline: auto;      /* Center the content */
+    padding: 1rem;            /* Padding for mobile views */
+}
+
+/* Step 2.4: Define Accent Color */
+:root {
+    --color-accent: oklch(65% 50% 0); 
+}
+
+html {
+    accent-color: var(--color-accent);
 }
