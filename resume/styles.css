@@ -1,0 +1,53 @@
+/* Step 5: Resume Styling */
+
+/* Header styling for the top of the resume */
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid var(--color-accent);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Section styling for Education/Experience */
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+/* Article styling for individual jobs/schools */
+article header {
+    display: flex;
+    justify-content: space-between; /* Puts Title on left, Date on right */
+    align-items: baseline;
+    flex-wrap: wrap; /* Helps with mobile resizing */
+}
+
+article h3 {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.date {
+    font-variant-numeric: tabular-nums; /* Makes dates line up nicely */
+    color: #666;
+    font-style: italic;
+}
+
+/* Skills grid - using simple Flexbox for Step 5 */
+.skills-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skills-grid article {
+    flex: 1;
+    min-width: 200px;
+}
