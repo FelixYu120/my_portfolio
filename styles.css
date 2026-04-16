@@ -89,3 +89,22 @@ h1, h2, h3, h4 {
     line-height: 1.1;
     text-wrap: balance;
 }
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+}
+
+/* Step 4.1: Automatic Dark Mode */
+html {
+    color-scheme: light dark;
+}
+
+/* Fix the harsh border color for dark mode */
+nav {
+    --border-color: oklch(50% 10% 200 / 40%);
+    border-bottom: 1px solid var(--border-color);
+}
