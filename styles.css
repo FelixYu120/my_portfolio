@@ -32,8 +32,8 @@ nav a {
 
 /* Style for the link of the page you are currently on */
 nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
-    padding-bottom: 0.1em;
+    /* Use the same variable so it stays subtle */
+    border-bottom: 0.4em solid var(--border-color);
 }
 
 /* Hover effect using your accent color */
@@ -112,3 +112,4 @@ nav {
 select, input, textarea, button {
     font: inherit;
 }
+
