@@ -1,10 +1,10 @@
 console.log('IT’S ALIVE!');
 
-// Helper function to select elements (Step 1)
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
+// Step 3.1: Data for your navigation
 let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
@@ -13,52 +13,54 @@ let pages = [
   { url: 'https://github.com/FelixYu120', title: 'GitHub' },
 ];
 
-// Step 3.1: Detect if we are local or on GitHub Pages
+// Step 3.1: Detect environment for paths
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') 
     ? '/' 
-    : '/my_portfolio/'; // Change this to your EXACT repo name
+    : '/my_portfolio/'; // MUST match your repo name exactly
 
+// Step 3.1: Create and prepend the nav
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
 for (let p of pages) {
-  let url = p.url;
-  let title = p.title;
+    let url = p.url;
+    let title = p.title;
 
-  // Fix paths: if it's not an external link, add the BASE_PATH
-  url = !url.startsWith('http') ? BASE_PATH + url : url;
+    // Fix paths
+    url = !url.startsWith('http') ? BASE_PATH + url : url;
 
-  let a = document.createElement('a');
-  a.href = url;
-  a.textContent = title;
-  
-  // Step 3.2: Highlight current page
-  if (a.host === location.host && a.pathname === location.pathname) {
-    a.classList.add('current');
-  }
+    // Step 3.2: Create link elements
+    let a = document.createElement('a');
+    a.href = url;
+    a.textContent = title;
 
-  // Open external links in new tab
-  if (a.host !== location.host) {
-    a.target = '_blank';
-  }
+    // Highlight current page
+    a.classList.toggle(
+        'current',
+        a.host === location.host && a.pathname === location.pathname
+    );
 
-  nav.append(a);
+    // External links
+    if (a.host !== location.host) {
+        a.target = '_blank';
+    }
+
+    nav.append(a);
 }
 
-
-// Step 4.2: Add the Switcher UI
+// Step 4.2: Add Dark Mode Switcher
 document.body.insertAdjacentHTML(
-  'afterbegin',
-  `
-  <label class="color-scheme">
-    Theme:
-    <select id="theme-switch">
-      <option value="light dark">Automatic</option>
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
-  </label>`
+    'afterbegin',
+    `
+    <label class="color-scheme">
+        Theme:
+        <select id="theme-switch">
+            <option value="light dark">Automatic</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </label>`
 );
 
 const select = document.querySelector('#theme-switch');
