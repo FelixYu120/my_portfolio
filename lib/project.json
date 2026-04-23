@@ -1,1 +1,22 @@
-
+[
+    {
+        "title": "Spotify & Presidential Approval",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Analyzing how music trends correlate with US presidential approval ratings using Spotify API data."
+    },
+    {
+        "title": "LoL Esports Analysis",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A data science project cleaning and analyzing League of Legends match data from the 2025 season."
+    },
+    {
+        "title": "Motorcycle Mirroring Adapter",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developing a hardware/software solution for screen mirroring specifically for motorcycle displays."
+    },
+    {
+        "title": "Quant Trading Bot",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A Python-based project focusing on AI frontier models applied to quantitative trading strategies."
+    }
+]
