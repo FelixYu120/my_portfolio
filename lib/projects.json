@@ -1,26 +1,74 @@
 [
     {
-        "title": "Spotify & Presidential Approval",
+        "title": "Project One",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio."
+    },
+    {
+        "title": "Project Two",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+    },
+    {
+        "title": "Project Three",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint."
+    },
+    {
+        "title": "Project Four",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Sint porro minima modi molestias doloribus cumque odit. Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+        "title": "Project Five",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum."
+    },
+    {
+        "title": "Project Six",
         "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Analyzing how music trends correlate with US presidential approval ratings using Spotify API data."
+        "description": "Veritatis ullam sint porro minima modi molestias doloribus cumque odit. Nobis ipsa laudantium quas."
     },
     {
-        "title": "LoL Esports Analysis",
+        "title": "Project Seven",
         "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A data science project cleaning and analyzing League of Legends match data from the 2025 season."
+        "description": "Explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias."
     },
     {
-        "title": "Motorcycle Mirroring Adapter",
-        "year": 2026,
+        "title": "Project Eight",
+        "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Developing a hardware/software solution for screen mirroring specifically for motorcycle displays."
+        "description": "Doloribus cumque odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos."
     },
     {
-        "title": "Quant Trading Bot",
+        "title": "Project Nine",
         "year": 2026,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A Python-based project focusing on AI frontier models applied to quantitative trading strategies."
+        "description": "Quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima."
+    },
+    {
+        "title": "Project Ten",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Modi molestias doloribus cumque odit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        "title": "Project Eleven",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam."
+    },
+    {
+        "title": "Project Twelve",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Sint porro minima modi molestias doloribus cumque odit. Nobis ipsa laudantium quas eum veritatis."
     }
 ]
