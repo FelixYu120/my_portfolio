@@ -20,26 +20,27 @@ export async function fetchJSON(url) {
     }
 }
 
-export function renderProjects(projects, containerElement) {
-  containerElement.innerHTML = '';
-  
-  const titleElement = document.querySelector('.projects-title');
-  if (titleElement) {
-      titleElement.textContent = `${projects.length} Projects`;
-  }
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+    containerElement.innerHTML = '';
+    
+    const titleElement = document.querySelector('.projects-title');
+    if (titleElement) {
+        titleElement.textContent = `${projects.length} Projects`;
+    }
 
-  for (let project of projects) {
-      const article = document.createElement('article');
-      article.innerHTML = `
-          <${headingLevel}>${project.title}</${headingLevel}>
-          <img src="${project.image}" alt="${project.title}">
-          <div class="project-description">
-              <p>${project.description}</p>
-              <p class="project-year">c. ${project.year}</p>
-          </div>
-      `;
-      containerElement.appendChild(article);
-  }
+    for (let project of projects) {
+        const article = document.createElement('article');
+        // Now headingLevel is defined and can be used here
+        article.innerHTML = `
+            <${headingLevel}>${project.title}</${headingLevel}>
+            <img src="${project.image}" alt="${project.title}">
+            <div class="project-description">
+                <p>${project.description}</p>
+                <p class="project-year">c. ${project.year}</p>
+            </div>
+        `;
+        containerElement.appendChild(article);
+    }
 }
 
 let pages = [
