@@ -1,12 +1,10 @@
-/* Step 1: Base styling and centering */
 body {
-    font: 100%/1.5 system-ui; /* Set font and line-height */
-    max-width: 100ch;         /* Prevent content from getting too wide */
-    margin-inline: auto;      /* Center the content */
-    padding: 1rem;            /* Padding for mobile views */
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;        
+    margin-inline: auto;
+    padding: 1rem;
 }
 
-/* Step 2.4: Define Accent Color */
 :root {
     --color-accent: oklch(65% 50% 0); 
 }
@@ -30,13 +28,11 @@ nav a {
     padding: 0.5em;
 }
 
-/* Style for the link of the page you are currently on */
+
 nav a.current {
-    /* Use the same variable so it stays subtle */
     border-bottom: 0.4em solid var(--border-color);
 }
 
-/* Hover effect using your accent color */
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     background-color: oklch(from var(--color-accent) 95% 5% h);
@@ -54,7 +50,6 @@ form label {
     grid-column: 1 / -1;
 }
 
-/* Force form elements to use the page font */
 input, textarea, button {
     font: inherit;
     width: 100%;
@@ -62,7 +57,7 @@ input, textarea, button {
 }
 
 button {
-    grid-column: 1 / -1; /* Make button span the whole width */
+    grid-column: 1 / -1; 
 }
 
 
@@ -75,10 +70,9 @@ button {
 .projects article {
     display: grid;
     grid-template-rows: subgrid;
-    grid-row: span 3; /* Title, Image, Paragraph */
+    grid-row: span 3; 
 }
 
-/* Contrast adjustment for headings */
 h1 {
     font-size: 400%;
     line-height: 1.1;
@@ -98,12 +92,10 @@ h1, h2, h3, h4 {
     font-family: inherit;
 }
 
-/* Step 4.1: Automatic Dark Mode */
 html {
     color-scheme: light dark;
 }
 
-/* Fix the harsh border color for dark mode */
 nav {
     --border-color: oklch(50% 10% 200 / 40%);
     border-bottom: 1px solid var(--border-color);
@@ -113,3 +105,23 @@ select, input, textarea, button {
     font: inherit;
 }
 
+#profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 1rem;
+}
+
+#profile-stats dt {
+    grid-row: 1; 
+    font-weight: bold;
+    color: var(--color-accent, gray);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+#profile-stats dd {
+    grid-row: 2; 
+    margin: 0;
+    font-size: 1.5rem;
+}
