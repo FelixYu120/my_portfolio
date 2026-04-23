@@ -4,7 +4,22 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// Step 3.1: Data for your navigation
+export async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        return data;
+
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
+}
+
 let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
@@ -13,7 +28,6 @@ let pages = [
   { url: 'https://github.com/FelixYu120', title: 'GitHub' },
 ];
 
-// Step 3.1: Detect environment for paths
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') 
     ? '/' 
@@ -26,22 +40,17 @@ document.body.prepend(nav);
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-
-    // Fix paths
     url = !url.startsWith('http') ? BASE_PATH + url : url;
 
-    // Step 3.2: Create link elements
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
 
-    // Highlight current page
     a.classList.toggle(
         'current',
         a.host === location.host && a.pathname === location.pathname
     );
 
-    // External links
     if (a.host !== location.host) {
         a.target = '_blank';
     }
@@ -49,7 +58,6 @@ for (let p of pages) {
     nav.append(a);
 }
 
-// Step 4.2: Add Dark Mode Switcher
 document.body.insertAdjacentHTML(
     'afterbegin',
     `
