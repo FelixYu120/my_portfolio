@@ -43,6 +43,10 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     }
 }
 
+export async function fetchGitHubData(username) {
+    return fetchJSON(`https://api.github.com/users/${username}`);
+}
+
 let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
