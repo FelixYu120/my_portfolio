@@ -26,3 +26,19 @@
     margin: 0;
     font-size: 1.5rem;
 }
+
+.project-year {
+  font-family: "Baskerville", "Georgia", serif;
+  font-variant-numeric: oldstyle-nums;
+  font-style: italic;
+  color: #666; /* Or any accent color you prefer */
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Ensure the description container handles the spacing well */
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
