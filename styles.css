@@ -150,10 +150,8 @@ select, input, textarea, button {
 }
 
 #projects-plot {    
-    flex: 0 1 20em;
     max-width: 20em;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
     margin: 0;
     overflow: visible;
 }
