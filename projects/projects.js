@@ -14,8 +14,9 @@ async function init() {
     let arcData = sliceGenerator(data);
     let arcs = arcData.map((d) => arcGenerator(d));
 
-    let svg = d3.select('svg');
-
+    let svg = d3.select('#projects-plot');
+    svg.selectAll('*').remove();
+    
     arcs.forEach((arc, idx) => {
         svg.append('path')
            .attr('d', arc)
