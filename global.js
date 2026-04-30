@@ -30,7 +30,6 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 
     for (let project of projects) {
         const article = document.createElement('article');
-        // Now headingLevel is defined and can be used here
         article.innerHTML = `
             <${headingLevel}>${project.title}</${headingLevel}>
             <img src="${project.image}" alt="${project.title}">
@@ -58,9 +57,8 @@ let pages = [
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') 
     ? '/' 
-    : '/my_portfolio/'; // MUST match your repo name exactly
+    : '/my_portfolio/'; 
 
-// Step 3.1: Create and prepend the nav
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
@@ -100,7 +98,6 @@ document.body.insertAdjacentHTML(
 
 const select = document.querySelector('#theme-switch');
 
-// Step 4.4 & 4.5: Functionality and Persistence
 function setColorScheme(color) {
     document.documentElement.style.setProperty('color-scheme', color);
     select.value = color;
