@@ -144,9 +144,9 @@ select, input, textarea, button {
 .container {
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     margin-block: 2em;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
 }
 
 #projects-plot {
