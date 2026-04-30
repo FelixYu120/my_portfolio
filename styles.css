@@ -150,7 +150,7 @@ select, input, textarea, button {
 }
 
 #projects-plot {    
-    flex: 1
+    flex: 1;
     max-width: 20em;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -159,7 +159,7 @@ select, input, textarea, button {
 }
 
 .legend {
-    flex: 0 1 20em;
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
