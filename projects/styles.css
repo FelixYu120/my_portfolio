@@ -43,6 +43,7 @@
     width: 100%;
     max-width: 20em;
     margin-block: 2em;
+    height: auto;
     display: block;
     margin-inline: auto;
     overflow: visible;
