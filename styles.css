@@ -141,16 +141,23 @@ select, input, textarea, button {
   gap: 0.3rem;
 }
 
-#projects-plot {
-    width: 100%;
-    max-width: 20em;
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
     margin-block: 2em;
-    height: auto;
-    margin-inline: auto;
+    flex-wrap: wrap; 
+}
+
+#projects-plot {
+
+    max-width: 20em;
+    margin: 0;
     overflow: visible;
 }
 
 .legend {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
