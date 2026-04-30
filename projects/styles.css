@@ -2,19 +2,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     gap: 2em;
+    margin-top: 2em;
 }
 
 .projects article {
     display: grid;
     grid-template-rows: subgrid;
-    grid-row: span 3; 
-    gap: 0.5em;
+    grid-row: span 3;
+    gap: 1em;
 }
 
 .projects img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     background: #f0f0f0;
+    border-radius: 8px;
 }
 
 .projects h2 {
@@ -22,24 +25,24 @@
     font-size: 1.5rem;
 }
 
-.project-year {
-  font-family: "Baskerville", "Georgia", serif;
-  font-variant-numeric: oldstyle-nums;
-  font-style: italic;
-  color: #666; 
-  margin-top: 0.5rem;
-  display: block;
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
-.project-description {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+.project-year {
+    font-family: "Baskerville", "Georgia", serif;
+    font-variant-numeric: oldstyle-nums;
+    font-style: italic;
+    color: #666;
+    margin-top: auto;
 }
 
 #projects-pie-plot {
-  max-width: 20em;
-  margin-block: 2em;
-
-  overflow: visible;
+    max-width: 20em;
+    margin-block: 2em;
+    display: block;
+    margin-inline: auto;
+    overflow: visible;
 }
