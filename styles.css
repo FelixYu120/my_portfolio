@@ -144,7 +144,7 @@ select, input, textarea, button {
 .container {
     display: flex;
     align-items: center;
-    gap: 4em;
+    gap: 2em;
     margin-block: 2em;
     flex-wrap: nowrap; 
 }
