@@ -135,9 +135,18 @@ select, input, textarea, button {
   display: block;
 }
 
-/* Ensure the description container handles the spacing well */
 .project-description {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+}
+
+#projects-plot {
+    width: 100%;
+    max-width: 20em;
+    margin-block: 2em;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    overflow: visible;
 }
