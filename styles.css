@@ -149,9 +149,10 @@ select, input, textarea, button {
     flex-wrap: nowrap; 
 }
 
-#projects-plot {
-
+#projects-plot {    
+    flex: 1
     max-width: 20em;
+    min-width: 10em;
     margin: 0;
     overflow: visible;
 }
