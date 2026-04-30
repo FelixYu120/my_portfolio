@@ -1,17 +1,12 @@
-/* Step 4.2: The Responsive Grid */
 .projects {
     display: grid;
-    /* This creates as many columns as fit, at least 15em wide each */
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     gap: 2em;
 }
 
-/* Step 4.3: Subgrid for Horizontal Alignment */
 .projects article {
     display: grid;
-    /* Tells the article to use the rows defined by the parent, but internally */
     grid-template-rows: subgrid;
-    /* Spans 3 rows: Title (h2), Image (img), and Description (p) */
     grid-row: span 3; 
     gap: 0.5em;
 }
@@ -31,12 +26,11 @@
   font-family: "Baskerville", "Georgia", serif;
   font-variant-numeric: oldstyle-nums;
   font-style: italic;
-  color: #666; /* Or any accent color you prefer */
+  color: #666; 
   margin-top: 0.5rem;
   display: block;
 }
 
-/* Ensure the description container handles the spacing well */
 .project-description {
   display: flex;
   flex-direction: column;
