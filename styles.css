@@ -159,7 +159,7 @@ select, input, textarea, button {
 }
 
 .legend {
-    flex: 1;
+    flex: 0 1 20em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
