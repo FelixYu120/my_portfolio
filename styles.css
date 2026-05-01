@@ -143,28 +143,55 @@ select, input, textarea, button {
 
 .container {
     display: flex;
-    align-items: center;
-    gap: 2em;
+    /* This centers the legend vertically relative to the circle */
+    align-items: center; 
+    gap: 3em;
     margin-block: 2em;
-    flex-wrap: nowrap; 
 }
 
-#projects-plot {    
-    max-width: 20em;
-    flex-shrink: 0;
-    margin: 0;
+#projects-plot {
+    /* Allow it to grow and shrink, but start at a reasonable 20em */
+    flex: 1;
+    max-width: 20em; 
+    /* Essential: lets it shrink if the legend needs the room */
+    min-width: 10em; 
+    
+    height: auto;
+    aspect-ratio: 1 / 1;
     overflow: visible;
+}
+#projects-plot path {
+    transition: 300ms;
+    cursor: pointer;
+}
+
+#projects-plot:has(path:hover) path:not(:hover) {
+    opacity: 0.5;
+}
+
+#projects-plot path:hover {
+    opacity: 1;
+}
+
+.selected {
+    --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+    fill: var(--color);
 }
 
 .legend {
-    flex: 1;
+    /* Allow the legend to occupy the remaining space */
+    flex: 1; 
     display: grid;
+    /* Keep columns manageable so they don't look squished */
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
-    margin-block: 2em;
-    padding: 1em;
+    padding: 1.5em;
     border: 1px solid #ccc;
-    list-style: none; /* Remove bullet points */
+    border-radius: 8px;
+    list-style: none;
 }
 
 .legend-item {
@@ -179,4 +206,13 @@ select, input, textarea, button {
     background-color: var(--color);
     border-radius: 3px;
     display: inline-block;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 0.8rem;
+    margin-block: 2em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
 }

@@ -39,12 +39,28 @@
     margin-top: auto;
 }
 
-#projects-plot {
-    width: 100%;
-    max-width: 20em;
-    margin-block: 2em;
-    height: auto;
-    display: block;
-    margin-inline: auto;
-    overflow: visible;
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#projects-plot:has(path:hover) path {
+  opacity: 0.5;
+}
+
+#projects-plot path:hover {
+  opacity: 1;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
 }
