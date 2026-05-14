@@ -1,9 +1,10 @@
 [
     {
-        "title": "Project One",
-        "year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio."
+        "title": "Bikewatching",
+        "year": "2026",
+        "image": "images/bikewatching.png",
+        "description": "An interactive, data-driven map visualizing over 260,000 BlueBikes trips in the Boston area. Built with Mapbox GL JS and D3.js.",
+        "url": "https://felixyu120.github.io/bikewatching/"
     },
     {
         "title": "Project Two",
